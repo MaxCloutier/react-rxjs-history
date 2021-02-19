@@ -18,6 +18,7 @@ export const useHistory = () => {
         ]);
       } else {
         // clear history when empty snapshot received
+        currentSnapshot.current = -1;
         setHistory([]);
       }
     });
